@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.col-sm-3 {
+  background-color: cyan;
+  color: red;
+  border: 5px solid chartreuse;
+  margin: 20px;
+  text-align: right;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+}
+</style>
+</head>
+<body style="background-color:black;">
+
+<div class="row date_time">
+    <div class="col-sm-3" datehead="">
+      
+      <p class="date"><script>
+document.write ('<p id="date" style="width: 60%; margin-bottom: -21px;">', new Date().toLocaleString(), '<\/p>')
+if (document.getElementById) onload = function () {
+    setInterval ("document.getElementById ('date').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</div>
+</div>
+
+</body>
+</html>
+
